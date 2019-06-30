@@ -20,7 +20,7 @@ title: "个人笔记"
 description: "在开发过程中所写的一些笔记。"
 baseurl: "/Notes/" # the subpath of your site, e.g. "/blog"
 url: "https://hejy47.github.io"
-logo: "/images/icon.jpg" # path of site logo, e.g. "/assets/images/logo.png"
+logo: "/Images/icon.jpg" # path of site logo, e.g. "/assets/images/logo.png"
 date_format: "%B %-d, %Y"
 read_time: true
 words_per_minute: 200

@@ -1,2 +1,9 @@
 _site
 .sass-cache
+.bundle
+vendor
+404.html
+archive.html
+index.html
+_posts
+_data

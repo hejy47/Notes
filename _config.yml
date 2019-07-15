@@ -1,97 +1,119 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
 # Site settings
-title: Notes
-SEOTitle: Notes
-header-img: img/home.jpg
-email: 1094610747@qq.com
-description: "Somebody has to win"
-keyword: "notes"
-url: "https://hejy47.github.io/Notes/"          # your host, for absolute URL
-baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/hejy47" # you code repository
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+remote_theme: "mmistakes/so-simple-theme"
+# remote_theme: mmistakes/so-simple-theme
+locale: ZH-CN
+title: "个人笔记"
+description: "在开发过程中所写的一些笔记。"
+baseurl: "/Notes/" # the subpath of your site, e.g. "/blog"
+url: "https://hejy47.github.io"
+logo: "/Images/icon.jpg" # path of site logo, e.g. "/assets/images/logo.png"
+date_format: "%B %-d, %Y"
+read_time: true
+words_per_minute: 200
+mathjax: true
+google_fonts:
+  - name: "Source Sans Pro"
+    weights: "400,400i,700,700i"
+  - name: "Lora"
+    weights: "400,400i,700,700i"
+google_analytics: # Google Analytics id, e.g. "UA-NNNNNNNN-N"
+disqus:
+  shortname: # Disqus shortname, e.g. "my_disqus_shortname"
+twitter:
+  username: mmistakes # site's Twitter username
 
-# Sidebar settings
-sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "little Gun"
-sidebar-avatar: /img/icon.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
-
-
-
-# SNS settings
-RSS: false
-github_username:        rookflying
-codeforces_username:    DamJoker
-
-
-
+# Liquid
+liquid:
+  error_mode: strict
 
 # Build settings
-# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
-permalink: pretty
-paginate: 10
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
-anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
-
-sitemap: true
-
-safe: true
-
-# Gems
-# from PR#40, to support local preview for Jekyll 3.0
-plugins: [jekyll-paginate, jekyll-sitemap]
-    # - jekyll-paginate
-    # - jekyll-sitemap
-
-
-
-
-# Markdown settings
-# replace redcarpet to kramdown,
-# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
-# document: http://jekyllrb.com/docs/configuration/#kramdown
 markdown: kramdown
-highlighter: rouge
-kramdown:
-  input: GFM                            # use Github Flavored Markdown !important
+feed:
+  path: atom.xml
 
+# Pagination - https://jekyllrb.com/docs/pagination/
+paginate: 10
+paginate_path: /page:num/
 
+# Search
+search_full_content: false
 
-# 评论系统
-# Disqus（https://disqus.com/）
-# disqus_username: qiubaiying
+# Taxonomy pages
+category_archive_path: "/categories/#"
+tag_archive_path: "/tags/#"
 
-# Gitalk
-gitalk:
-  enable: false    #是否开启Gitalk评论
-  clientID: 0264aff17f1da521fcd6                         #生成的clientID
-  clientSecret: a0dbfa1bddbfc22b77416235ebccd6975f62af05    #生成的clientSecret
-  repo: rookflying.github.io    #仓库名称
-  owner: rookflying    #github用户名
-  admin: rookflying
-  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
 
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
 
-# 统计
+# Collections
+collections:
+  recipes:
+    output: true
+    permalink: /:collection/:path/
 
-# Analytics settings
-# Baidu Analytics
-# ba_track_id: b50bf2b12b5338a1845e33832976fd68
+# Front Matter Defaults
+defaults:
+  # Post defaults
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      comments: true
+      share: true
+  # Recipe defaults
+  - scope:
+      path: "_recipes"
+      type: recipes
+    values:
+      layout: post
+      comments: true
+      share: true
 
-# Google Analytics
-ga_track_id: 'UA-131003745-1'            # Format: UA-xxxxxx-xx
-ga_domain: rookflying.com               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
+# Site Author
+author:
+  name: hejy47
+  picture: /Images/icon.jpg
+  email:
+  links:
+    - title: GitHub
+      url: https://github.com/hejy47
+      icon: fab fa-github-square
 
-
-
-
-
-# Featured Tags
-featured-tags: true                     # 是否使用首页标签
-featured-condition-size: 0              # 相同标签数量大于这个数，才会出现在首页
-
-
-
-# Progressive Web Apps
-chrome-tab-theme-color: "#000000"
-service-worker: true
-
-
+# Footer Links
+footer_links:
+  - title: GitHub
+    url: https://github.com/mmistakes
+    icon: fab fa-github-square
+  - title: Feed
+    url: atom.xml
+    icon: fas fa-rss-square

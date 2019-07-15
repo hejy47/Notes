@@ -1,16 +1,3 @@
----
-layout:          post
-title:           Postman高级应用之Mock服务
-subtitle:        Postman高级应用之Mock服务
-date:            2019-06-30
-author:          rookflying
-header-img:      img/cxyzwxy_chapter_12/background.jpg
-catalog:         true
-tags:
-    - Windows
-    - Linux
----
-
 # Postman高级应用之Mock服务
 
 ## 场景

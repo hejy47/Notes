@@ -25,7 +25,7 @@ Verdi自动调试平台，除了源代码浏览器的标准功能，原理图，
 1. 将文件路径加入到filelist.f中
 2. 在终端下使用命令 vcs -f filelist.f -full64 -debug_all -cm line+cond+fsm+tgl -LDFLAGS -Wl,--no-as-needed
 3. 运行./simv -cm line+cond+fsm+tgl
-4. 查看文件，多了一个*.vdb的文件夹，使用dve查看覆盖率：dve -full64 -cov simv.vdb
+4. 查看文件，多了一个*.vdb的文件夹，使用dve查看覆盖率：dve -full64 -covdir simv.vdb
 
 ### 问题
 

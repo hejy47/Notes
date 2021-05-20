@@ -52,7 +52,7 @@ Alarm Clock：基于迁移系统的规约
    1. 使用形式逻辑来描述程序的语义
    2. 在已有的形式逻辑系统的基础上增加所有程序必须满足的基本命题（程序公理）
    3. 与断言逻辑一起构成程序逻辑的证明系统
-   ![AxiomaticSemantics](./AxiomaticSemantics.bmp)
+   ![AxiomaticSemantics](./figures/AxiomaticSemantics.bmp)
 5. 比较
 
 ||数学基础|语义特点|使用场景|
@@ -69,7 +69,7 @@ Alarm Clock：基于迁移系统的规约
 ### 定理证明
 
 1. 定理证明框架
-   ![TheoryProof](./TheoryProof.bmp)
+   ![TheoryProof](./figures/TheoryProof.bmp)
 2. 交互式定理证明（Coq、Isabelle/HOL等）
    1. 利用计算机来解决证明在计算机中的表示问题以及自动检查证明的正确性，证明的构造则由人手工和机器交互
    2. 高阶定理证明，优点在于无需牺牲规约和代码的表达能力，特别是程序规约可以用表达能力很强的逻辑

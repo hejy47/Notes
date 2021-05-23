@@ -13,7 +13,8 @@
 ## 形式化方法学习笔记
 
 * [基本概念](formal_method/chapter1)
-
+* [程序图](formal_method/chapter2)
+* [卫兵命令](formal_method/chapter3)
 ## 论文阅读笔记
 
 * [Formal specification and verification of autonomous robotic systems: A survey](fsvars)

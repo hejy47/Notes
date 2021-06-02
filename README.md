@@ -15,6 +15,10 @@
 * [基本概念](formal_method/chapter1)
 * [程序图](formal_method/chapter2)
 * [卫兵命令](formal_method/chapter3)
+* [程序验证](formal_method/chapter4)
+* [程序分析](formal_method/chapter5)
+* [基于语言的安全](formal_method/chapter6)
 ## 论文阅读笔记
 
+* [TBAR: Revisiting template-based automated program repair](TBar)
 * [Formal specification and verification of autonomous robotic systems: A survey](fsvars)

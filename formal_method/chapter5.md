@@ -77,7 +77,7 @@ $$
     $$
     \hat{\mathcal{S}} \llbracket \alpha \rrbracket\left(\mathbf{A}\left(q_{\circ}\right)\right) \subseteq \mathbf{A}\left(q_{\bullet}\right)
     $$
-* $\widehat{{M e m}_{\triangleright}} \subseteq \mathbf{A}\left(q_{\triangleright}\right)$
+* $\widehat{Mem_{\triangleright}} \subseteq \mathbf{A}\left(q_{\triangleright}\right)$
 
 ### 正确性
 

@@ -17,7 +17,7 @@ remote_theme: "mmistakes/so-simple-theme"
 # remote_theme: mmistakes/so-simple-theme
 locale: ZH-CN
 title: "个人笔记"
-description: "在开发过程中所写的一些笔记。"
+description: "菜鸟的自我奋斗"
 baseurl: "/Notes/" # the subpath of your site, e.g. "/blog"
 url: "https://hejy47.github.io"
 logo: "/Images/icon.jpg" # path of site logo, e.g. "/assets/images/logo.png"
@@ -108,12 +108,3 @@ author:
     - title: GitHub
       url: https://github.com/hejy47
       icon: fab fa-github-square
-
-# Footer Links
-footer_links:
-  - title: GitHub
-    url: https://github.com/mmistakes
-    icon: fab fa-github-square
-  - title: Feed
-    url: atom.xml
-    icon: fas fa-rss-square

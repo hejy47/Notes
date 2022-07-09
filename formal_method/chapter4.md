@@ -7,19 +7,19 @@
 ### 程序逻辑
 
 * 语法
-    $$
-    \begin{aligned}
-    \phi::=& \text { true }\left|\phi_{1} \wedge \phi_{2}\right| \phi_{1} \vee \phi_{2}\left|\neg \phi_{0}\right| \phi_{1} \Rightarrow \phi_{2} \mid \\
-    & \exists \underline{x}: \phi_{0}\left|\forall \underline{x}: \phi_{0}\right| e_{1}=e_{2}|\cdots| p\left(e_{1}, \cdots, e_{n}\right)
-    \end{aligned}
-    $$
-    $$
-    e \quad::=x|\underline{x}| e_{1}+e_{2} \mid f\left(e_{1}, \cdots, e_{n}\right)
-    $$
+  $$
+  \begin{aligned}
+  \phi::=& \text { true }\left|\phi_{1} \wedge \phi_{2}\right| \phi_{1} \vee \phi_{2}\left|\neg \phi_{0}\right| \phi_{1} \Rightarrow \phi_{2} \mid \\
+  & \exists \underline{x}: \phi_{0}\left|\forall \underline{x}: \phi_{0}\right| e_{1}=e_{2}|\cdots| p\left(e_{1}, \cdots, e_{n}\right)
+  \end{aligned}
+  $$
+  $$
+  e \quad::=x|\underline{x}| e_{1}+e_{2} \mid f\left(e_{1}, \cdots, e_{n}\right)
+  $$
 * 语义
-    $$
-    (\sigma, \underline{\sigma}) \models \phi
-    $$
+  $$
+  (\sigma, \underline{\sigma}) \models \phi
+  $$
 * 提示
   * 在程序中一般有逻辑符号$(x,y,z)$，非逻辑符号（不同程序里面有不同的符号，如$sorted()$等）
   * 在整个程序里面，$\underline{\sigma}$是一样的，非逻辑变量$\sigma$在每个状态可能是不一样的。
